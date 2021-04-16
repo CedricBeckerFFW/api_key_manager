@@ -88,13 +88,13 @@ class AuthApiKeyForm extends EntityForm {
 
     switch ($status) {
       case SAVED_NEW:
-        drupal_set_message($this->t('Created the %label API Key Authentication.', [
+        \Drupal::messenger()->addMessage($this->t('Created the %label API Key Authentication.', [
           '%label' => $auth_api_key->label(),
         ]));
         break;
 
       default:
-        drupal_set_message($this->t('Saved the %label API Key Authentication.', [
+        \Drupal::messenger()->addMessage($this->t('Saved the %label API Key Authentication.', [
           '%label' => $auth_api_key->label(),
         ]));
     }

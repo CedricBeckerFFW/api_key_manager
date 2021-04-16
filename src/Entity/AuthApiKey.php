@@ -132,6 +132,6 @@ class AuthApiKey extends ConfigEntityBase implements AuthApiKeyInterface {
     $token = str_replace(['+', '/', '='], ['-', '_', ''], $token);
 
     $known = Crypt::hmacBase64($payload, $this->getSharedSecret());
-    return Crypt::hashEquals($known, $token);
+    return hash_equals($known, $token);
   }
 }

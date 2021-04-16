@@ -3,14 +3,14 @@
 namespace Drupal\api_key_manager\Tests;
 
 use Drupal\Core\Url;
-use Drupal\simpletest\WebTestBase;
+use Drupal\Tests\BrowserTestBase;
 
 /**
  * Simple test to ensure that main page loads with module enabled.
  *
  * @group api_key_manager
  */
-class LoadTest extends WebTestBase{
+class LoadTest extends BrowserTestBase{
 
   /**
    * Modules to enable.
