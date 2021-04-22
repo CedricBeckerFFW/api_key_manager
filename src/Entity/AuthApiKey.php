@@ -29,6 +29,15 @@ use Drupal\Core\Config\Entity\ConfigEntityBase;
  *     "label" = "label",
  *     "uuid" = "uuid"
  *   },
+ *   config_export = {
+ *     "id",
+ *     "label",
+ *     "uuid",
+ *     "uid",
+ *     "api_key",
+ *     "shared_secret",
+ *     "enabled"
+ *   },
  *   links = {
  *     "canonical" = "/admin/config/system/auth_api_key/{auth_api_key}",
  *     "add-form" = "/admin/config/system/auth_api_key/add",
